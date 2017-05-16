@@ -42,6 +42,7 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
     * The system would ask you to set a lock screen **PIN** or **password**, just set one and save it
     * Now the certificate is installed
     * Open an application and monitor the traffic on Charles
+* A dialog pops up on computer asking "A connection attempt to  Charles has been made from the host ...", just click **Allow** button
 
 ### iOS
 
