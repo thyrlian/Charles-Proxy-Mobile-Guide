@@ -42,9 +42,10 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
 * Make sure the Android device uses the same network as Charles
 * On **Android** device
     * Go to **Settings** -> **Wi-Fi** -> long click the **network** in use -> **Modify network** -> **Advanced options** -> **Proxy** -> **Manual**
-    * Set **Proxy hostname** to the **IP address**, and **Proxy port** to **8888**, then click **Save**
-    
-    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/Android/Wi-Fi.png" width="256">
+        * **Proxy hostname** = **IP address**
+        * **Proxy port** = **8888**
+        
+        <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/Android/Wi-Fi.png" width="256">
     
     * Launch **Browser**, visit https://chls.pro/ssl, save the certificate
     
@@ -59,7 +60,21 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
 
 ### iOS
 
+* Launch **Charles** and keep it running
+* Get the **IP address**
+* Make sure the iOS device uses the same network as Charles
+* On **iOS** device
+    * Go to **Settings** -> **Wi-Fi** -> click the **network** in use -> set **HTTP PROXY** to **Manual**
+        * **Server** = **IP address**
+        * **Port** = **8888**
+    * Launch **Safari**, visit https://chls.pro/ssl, install the certificate
+    * Open an application and monitor the traffic on Charles
+* A dialog pops up on computer asking "A connection attempt to  Charles has been made from the host ...", just click **Allow** button
+
 #### iOS 10.3 and afterwards
+
+* After the certificate is installed
+* Go to **Settings** -> **General** -> **About** -> **Certificate Trust Settings** -> **Enable Full Trust For Root Certificates** -> enable Charles' certificate
 
 ### Terminal
 
