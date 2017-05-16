@@ -32,7 +32,16 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
 
 ### Android
 
-
+* Launch **Charles** and keep it running
+* Get the **IP address**
+* Make sure the Android device uses the same network as Charles
+* On **Android** device
+    * Go to **Settings** -> **Wi-Fi** -> long click the **network** in use -> **Modify network** -> **Advanced options** -> **Proxy** -> **Manual**
+    * Set **Proxy hostname** to the **IP address**, and **Proxy port** to **8888**, then click **Save**
+    * Launch **Browser**, visit https://chls.pro/ssl, save the certificate
+    * The system would ask you to set a lock screen **PIN** or **password**, just set one and save it
+    * Now the certificate is installed
+    * Open an application and monitor the traffic on Charles
 
 ### iOS
 
