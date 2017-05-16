@@ -12,13 +12,13 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
 * **Charles** -> **Proxy** -> **SSL Proxying Settings...** -> **SSL Proxying**
     * Check "**Enable SSL Proxying**"
     * Add location matcher "**Host: &ast;**", "**Port: &ast;**"
-    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/SSL-Proxying-Settings.png">
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/macOS/SSL-Proxying-Settings.png">
 * **Charles** -> **Help** -> **SSL Proxying** -> **Install Charles Root Certificate**
     * It would install the certificate to **Keychain**, and open it up automatically
     * Double click the certificate in Keychain
     * Expand **Trust**, select **Always Trust** for **When using this certificate**
-    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/Root-Certificate-not-trusted.png">
-    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/Root-Certificate-trusted.png">
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/macOS/Root-Certificate-not-trusted.png">
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/macOS/Root-Certificate-trusted.png">
 * Get the **IP address** that Charles is listening to
     * **Charles** -> **Help** -> **Local IP Address**
     * Or get the WLAN IP address via command line (right into your clipboard)
