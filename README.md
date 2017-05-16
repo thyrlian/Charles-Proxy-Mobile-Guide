@@ -61,3 +61,18 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
 
 #### iOS 10.3 and afterwards
 
+### Terminal
+
+In case you need to debug via curl in a terminal:
+
+* To set Charles as the proxy
+
+    ```shell
+    export http_proxy=http://127.0.0.1:8888 && export https_proxy=$http_proxy
+    ```
+
+* To remove the proxy
+
+    ```shell
+    unset http_proxy https_proxy
+    ```
