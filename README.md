@@ -12,13 +12,18 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
 * **Charles** -> **Proxy** -> **SSL Proxying Settings...** -> **SSL Proxying**
     * Check "**Enable SSL Proxying**"
     * Add location matcher "**Host: &ast;**", "**Port: &ast;**"
-    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/macOS/SSL-Proxying-Settings.png">
+    
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/macOS/SSL-Proxying-Settings.png" width="600">
+    
 * **Charles** -> **Help** -> **SSL Proxying** -> **Install Charles Root Certificate**
     * It would install the certificate to **Keychain**, and open it up automatically
     * Double click the certificate in Keychain
     * Expand **Trust**, select **Always Trust** for **When using this certificate**
-    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/macOS/Root-Certificate-not-trusted.png">
-    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/macOS/Root-Certificate-trusted.png">
+    
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/macOS/Root-Certificate-not-trusted.png" width="400">
+    
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/macOS/Root-Certificate-trusted.png" width="400">
+    
 * Get the **IP address** that Charles is listening to
     * **Charles** -> **Help** -> **Local IP Address**
     * Or get the WLAN IP address via command line (right into your clipboard)
@@ -38,7 +43,13 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
 * On **Android** device
     * Go to **Settings** -> **Wi-Fi** -> long click the **network** in use -> **Modify network** -> **Advanced options** -> **Proxy** -> **Manual**
     * Set **Proxy hostname** to the **IP address**, and **Proxy port** to **8888**, then click **Save**
+    
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/Android/Wi-Fi.png" width="256">
+    
     * Launch **Browser**, visit https://chls.pro/ssl, save the certificate
+    
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/Android/certificate.png" width="256">
+    
     * The system would ask you to set a lock screen **PIN** or **password**, just set one and save it
     * Now the certificate is installed
     * Open an application and monitor the traffic on Charles
