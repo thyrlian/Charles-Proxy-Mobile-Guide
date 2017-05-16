@@ -55,5 +55,9 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
     * Open an application and monitor the traffic on Charles
 * A dialog pops up on computer asking "A connection attempt to  Charles has been made from the host ...", just click **Allow** button
 
+#### Android N (7.0, API level 24) and afterwards
+
 ### iOS
+
+#### iOS 10.3 and afterwards
 
