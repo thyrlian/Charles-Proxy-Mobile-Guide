@@ -67,7 +67,13 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
     * Go to **Settings** -> **Wi-Fi** -> click the **network** in use -> set **HTTP PROXY** to **Manual**
         * **Server** = **IP address**
         * **Port** = **8888**
+    
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/iOS/Wi-Fi.png" width="256">
+    
     * Launch **Safari**, visit https://chls.pro/ssl, install the certificate
+    
+    <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/iOS/certificate.png" width="256">
+    
     * Open an application and monitor the traffic on Charles
 * A dialog pops up on computer asking "A connection attempt to  Charles has been made from the host ...", just click **Allow** button
 
@@ -75,6 +81,8 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
 
 * After the certificate is installed
 * Go to **Settings** -> **General** -> **About** -> **Certificate Trust Settings** -> **Enable Full Trust For Root Certificates** -> enable Charles' certificate
+
+<img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/iOS/Certificate-Trust-Settings.png" width="256">
 
 ### Terminal
 
