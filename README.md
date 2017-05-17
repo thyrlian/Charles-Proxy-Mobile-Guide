@@ -99,3 +99,7 @@ In case you need to debug via curl in a terminal:
     ```shell
     unset http_proxy https_proxy
     ```
+
+### SSL CA Certificate
+
+* Charles Proxy running on the same computer provides the same SSL certificate.
