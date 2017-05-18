@@ -58,6 +58,38 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
 
 #### Android N (7.0, API level 24) and afterwards
 
+* Open your Android project with Android Studio
+* **Android Studio** -> **File** -> **New** -> **Android resource directory**
+    * **Directory name** = **xml**
+    * **Directory type** = **xml**
+    * **Source set** = **debug**
+* **Android Studio** -> **File** -> **New** -> **XML resource file**
+    * **File name** = **network_security_config**
+    * **Root element** = **network-security-config**
+* Above step would generate a XML file with the given root element.  Now paste below content to replace the existing content in the generated XML file.
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <network-security-config xmlns:android="http://schemas.android.com/apk/res/android">
+        <debug-overrides>
+            <trust-anchors>
+                <!-- Trust user added CAs while debuggable only -->
+                <certificates src="user" />
+            </trust-anchors>
+        </debug-overrides>
+    </network-security-config>
+    ```
+* Then copy the **AndroidManifest.xml** file from **main** source set to **debug** source set (if you don't have one yet).  Add a reference to the network_security_config.xml file in debug app's manifest:
+    ```xml
+    <manifest ... >
+        <application
+            ...
+            android:networkSecurityConfig="@xml/network_security_config">
+        </application>
+    </manifest>
+    ```
+
+Now the SSL proxying should work for your app's debug build variant, but not for release build variant.
+
 ### iOS
 
 * Launch **Charles** and keep it running
