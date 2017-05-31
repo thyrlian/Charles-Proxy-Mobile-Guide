@@ -78,13 +78,17 @@ The mobile hackers' guide to Charles Proxy :thumbsup:
         </debug-overrides>
     </network-security-config>
     ```
-* Then copy the **AndroidManifest.xml** file from **main** source set to **debug** source set (if you don't have one yet).  Add a reference to the network_security_config.xml file in debug app's manifest:
+* Then go to **debug** source set, create a blank **AndroidManifest.xml** file if you don't have one for the debug build variant, and add content like below (eventually the manifest merger will merge it with the main manifest).  When you already have one, simply add the `networkSecurityConfig` attribute under `application`.
     ```xml
-    <manifest ... >
+    <?xml version="1.0" encoding="utf-8"?>
+    
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    
         <application
-            ...
             android:networkSecurityConfig="@xml/network_security_config">
         </application>
+    
     </manifest>
     ```
 
