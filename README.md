@@ -106,7 +106,7 @@ Now the SSL proxying should work for your app's debug build variant, but not for
         
         <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/iOS/Wi-Fi.png" width="256">
     
-    * Launch **Safari**, visit https://chls.pro/ssl, install the certificate
+    * Launch **Safari**, visit https://chls.pro/ssl (if it doesn't work, try http://www.charlesproxy.com/getssl), install the certificate
     
     <img src="https://github.com/thyrlian/Charles-Proxy-Mobile-Guide/blob/master/Screenshots/iOS/certificate.png" width="256">
     
